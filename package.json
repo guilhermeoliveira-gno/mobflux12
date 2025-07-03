@@ -1,7 +1,7 @@
 {
   "name": "tiaw-aproveita-mais",
   "version": "1.0.0",
-  "description": "API com Node.js e JSON Server",
+  "description": "Projeto com JSON Server e front-end em 'codigo/public'",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
