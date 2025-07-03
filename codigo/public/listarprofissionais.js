@@ -6,7 +6,8 @@ let filtroAtual = "";
 async function carregarProfissionais() {
     try {
         // Substitua essa URL pela URL da sua API no Replit
-        const apiUrl = 'http://localhost:3000/profissionais';
+        const apiUrl = 'https://0aecadb3-e8a7-43c2-ab62-e5bf81c2286c-00-1roml84r0ldxr.riker.replit.dev/profissionais';
+
 
         const response = await fetch(apiUrl);
         profissionais = await response.json();

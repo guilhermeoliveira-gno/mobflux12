@@ -5,7 +5,8 @@ const registerBtn = document.querySelector('.register-btn');
 const loginBtn = document.querySelector('.login-btn');
 
 // URL da API json-server hospedada no Replit
-const apiUrl = 'http://localhost:3000/comum';
+const apiUrl = 'https://0aecadb3-e8a7-43c2-ab62-e5bf81c2286c-00-1roml84r0ldxr.riker.replit.dev/comum';
+
 
 registerBtn?.addEventListener('click', () => {
     container.classList.add('active');
