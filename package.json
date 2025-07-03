@@ -1,12 +1,11 @@
 {
-  "name": "meu-projeto",
+  "name": "tiaw-aproveita-mais",
   "version": "1.0.0",
-  "description": "Projeto que roda JSON Server e serve index.html",
-  "main": "server.js",
+  "description": "Back end com JSONServer. Projeto da disciplina de Desenvolvimento de Interfaces Web da PUC Minas",
   "scripts": {
-    "start": "json-server --watch ./db.json --port 3000 --static ./codigo/public"
+    "start": "json-server --watch ./db/db.json --port 3000 --static ./public"
   },
   "dependencies": {
-    "json-server": "^0.17.4"
+    "json-server": "^0.17.3"
   }
 }
