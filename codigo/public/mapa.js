@@ -3,7 +3,7 @@ let searchBox;
 let imagemBase64 = "";
 
 // URL da sua API hospedada
-const apiBaseUrl = 'http://localhost:3000/locais';
+const apiBaseUrl = 'https://0aecadb3-e8a7-43c2-ab62-e5bf81c2286c-00-1roml84r0ldxr.riker.replit.dev/locais';
 
 // Inicializa o mapa e autocomplete
 async function initMap() {
