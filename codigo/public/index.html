@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>MobFlux</title>
+        <link rel="icon" href="../logomobflux.jpg" type="image/x-icon">
+
+        <!-- CSS FILES -->                
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="../guilherme/css/bootstrap-icons.css" rel="stylesheet">
+        <link href="../guilherme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../guilherme/css/home.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="../projeto_cabecalho/logo.png" style="width: 300px; height: auto;" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
+                        <span class="navbar-brand-text">
+                            Mobflux
+                            <small>tiaw</small>
+                        </span>
+                    
+
+                    <div class="d-lg-none ms-auto me-3">
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Membro Login</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Menu</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Profissionais</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Mapa</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">Favoritos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">Sobre Nós</a>
+                            </li>
+
+                            
+                        </ul>
+
+                        <!-- Botão Login (só aparece se não estiver logado) -->
+<a id="btn-login" class="btn custom-btn custom-border-btn" href="../cadastrouser/cadastropadrao.html">
+  Login
+</a>
+
+<!-- Botão Perfil (só aparece se estiver logado) -->
+<a id="btn-perfil" class="btn custom-btn custom-border-btn" href="#" style="display: none;">
+  Perfil
+</a>
+                    </div>
+                </div>
+            </nav>
+
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                <div class="section-overlay"></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <h2 class="text-white">Bem vindo <a href=""></a></h2>
+
+                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                                <span>Mobflux é</span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">Mobilidade</b>
+                                    <b>Inclusão</b>
+                                    <b>Pertencimento</b>
+                                </span>
+                            </h1>
+
+                            <div class="custom-btn-group">
+                                <a href="#section_3" class="btn custom-btn smoothscroll me-3">Mapa de Acessibilidade</a>
+
+                                <a href="#section_2" class="link smoothscroll" style="width: fit-content; height: 50px;">Profissionais</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+  <h2 id="video-title"></h2>
+  <div class="ratio ratio-16x9" id="video-container">Carregando vídeo...</div>
+</div>
+
+
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            </section>
+
+
+            <section class="about-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-lg-5 mb-4">Profissionais Cadastrados</h2>
+                        </div>
+                        <div class="container mb-4">
+                          <input type="text" id="pesquisa" class="form-control" placeholder="Pesquisar por nome, especialidade, telefone ou local...">
+                        </div>
+
+                        
+                        <div class="row" id="lista-profissionais">
+                            <!-- Profissionais serão carregados aqui via JS -->
+                        </div>
+
+                        <div class="text-center mt-4">
+                           <button id="ver-mais-btn" class="btn btn-primary">Ver mais</button>
+                        </div>
+
+
+
+
+
+                        <div class="row" id="containerProfissionais"></div>
+
+            </section>
+
+
+            <section class="section-bg-image"   id="section_3">
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <div class="section-bg-image-block">
+                                <h2 class="mb-lg-3">Mapa de Acessibilidade</h2>
+
+                                <p>  Este mapa identifica locais acessíveis e não acessíveis para cadeirantes, ajudando no planejamento e na conscientização sobre a importância da acessibilidade. Explore o mapa, conheça os pontos destacados e contribua para tornar nossa cidade mais acessível!</p>
+
+                               <a href="../projeto_cabecalho/cabecalho.html"> <button type="submit" class="form-control">Abrir </button>  </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+            </section>
+
+
+            
+
+            <section class="events-section section-bg section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        
+                </div>
+                                
+            </section>
+
+            <div style="margin-top: -170px;">
+<section class="events-section section-bg section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <h2 class="mb-lg-3">Locais Favoritados</h2>
+                        </div>
+                        
+                        <div id="favoritosContainer" class="row">
+                               <!-- Aqui serão mostrados os locais favoritados -->
+                        </div>
+
+
+
+                        
+
+            </section>
+            </div>
+
+
+
+
+
+
+
+            <section class="contact-section section-padding" id="section_5">
+                <div class="container">
+                    <div class="row">
+
+                        
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0" style="margin-top: 50px;">
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <img src="../guilherme/images/logo.png" class="navbar-brand-image img-fluid" alt="">
+                            <span class="navbar-brand-text">
+                                Mobflux
+                                <small>tiaw</small>
+                            </span>
+                        </a>
+                    </div>
+
+                    
+                    <div class="col-lg-3 col-12" style="margin-top: 50px; width: 500px; margin-left: -200px;">
+                        <h5 class="site-footer-title mb-4">Sobre Nós</h5>
+
+                        <p class="d-flex me-lg-3">
+                            
+                           Somos estudantes do primeiro período de Engenharia de Software e estamos desenvolvendo o MobFlux. Nosso objetivo é criar uma aplicação que facilite a vida de cadeirantes, conectando-os a profissionais e indicando locais acessíveis. Acreditamos no poder da tecnologia para promover a autonomia e a inclusão.Nosso compromisso é construir um futuro mais acessível para todos, e o MobFlux é o primeiro passo nessa jornada.
+                        </p>
+                        
+                        
+                    </div>
+
+                        <div class="col-lg-2 col-12 ms-auto about">
+                            <ul class="social-icon mt-lg-5 mt-3 mb-4">
+                                <li class="social-icon-item">
+                                    <a href="https://chat.whatsapp.com/GZ98yKsFHDvERJyTgePfQz ">
+                                            <ion-icon id="icones" name="logo-whatsapp"></ion-icon>
+                                    </a>
+                                </li>
+
+
+                                <li class="social-icon-item">
+                                    <a href="https://www.instagram.com/mob.flux?igsh=djIyem03OTNmYjNm ">
+                                        <ion-icon id="icones" name="logo-instagram"></ion-icon>
+                                    </a>
+                                </li>
+
+                                
+                            </ul>
+                            
+                            
+                        </div>
+
+                </div>
+            </div>
+
+
+            <div id="integrantes" >
+
+                           <div>
+                        <div class="member-block-image-wrap" style="width: 200px;">
+                                  <img src="../integrantes/vs.jpg" class="member-block-image img-fluid" alt="Imagem">
+                                   <ul   style="background-color: transparent;" class="social-icon">
+                                        <li><a href="https://www.instagram.com/victorsverberi?igsh=NjNlOXAybnhqMmN3 "><ion-icon style="background-color: wheat; border-radius: 100%;  font-size: 50px;" name="logo-instagram"></ion-icon></a></li>
+
+                                </ul>
+                        </div>
+                            <div class="member-block-info d-flex align-items-center justify-content-between">
+                       <div>
+                         <h4>Victor Sverberi</h4>
+                               <p>Engenheiro de software</p>
+                               </div>
+                       </div>
+                           </div>
+
+                           
+
+                           <div>
+                        <div class="member-block-image-wrap" style="width: 200px;">
+                                  <img src="../integrantes/gl.jpg" class="member-block-image img-fluid" alt="Imagem">
+                                   <ul   style="background-color: transparent;" class="social-icon">
+                                        <li><a href="https://www.instagram.com/gilott_?igsh=Ym9xa29wcmswMnB5 "><ion-icon style="background-color: wheat; border-radius: 100%;  font-size: 50px;" name="logo-instagram"></ion-icon></a></li>
+
+                                </ul>
+                        </div>
+                            <div class="member-block-info d-flex align-items-center justify-content-between">
+                       <div>
+                         <h4>Giovana Lott</h4>
+                               <p>Engenheira de software</p>
+                               </div>
+                       </div>
+                           </div>
+
+                           <div>
+                        <div class="member-block-image-wrap" style="width: 200px;">
+                                  <img src="../integrantes/gui.jpg" class="member-block-image img-fluid" alt="Imagem">
+                                   <ul   style="background-color: transparent;" class="social-icon">
+                                        <li><a href="https://www.instagram.com/guioliveira_gno?igsh=MWNjY2xsdnd6NmZkMQ=="><ion-icon style="background-color: wheat; border-radius: 100%;  font-size: 50px;" name="logo-instagram"></ion-icon></a></li>
+
+                                </ul>
+                        </div>
+                            <div class="member-block-info d-flex align-items-center justify-content-between">
+                       <div>
+                         <h4>Guilherme Oliveira</h4>
+                               <p>Engenheiro de software</p>
+                               </div>
+                       </div>
+                           </div>
+
+                           <div>
+                        <div class="member-block-image-wrap" style="width: 200px;">
+                                  <img src="../integrantes/jv.jpg" class="member-block-image img-fluid" alt="Imagem">
+                                   <ul   style="background-color: transparent;" class="social-icon">
+                                        <li><a href="https://www.instagram.com/only.jv_?igsh=MmR0Y2Y3ZXB4c212"><ion-icon style="background-color: wheat; border-radius: 100%;  font-size: 50px;" name="logo-instagram"></ion-icon></a></li>
+
+                                </ul>
+                        </div>
+                            <div class="member-block-info d-flex align-items-center justify-content-between">
+                       <div>
+                         <h4>João Calixto</h4>
+                               <p>Engenheiro de software</p>
+                               </div>
+                       </div>
+                           </div>
+                           <div>
+                        <div class="member-block-image-wrap" style="width: 200px;">
+                                  <img src="../integrantes/rh.jpg" class="member-block-image img-fluid" alt="Imagem">
+                                   <ul   style="background-color: transparent;" class="social-icon">
+                                        <li><a href="https://www.instagram.com/aquino21?igsh=MW91a2x2M3prMGw5aQ=="><ion-icon style="background-color: wheat; border-radius: 100%;  font-size: 50px;" name="logo-instagram"></ion-icon></a></li>
+
+                                </ul>
+                        </div>
+                            <div class="member-block-info d-flex align-items-center justify-content-between">
+                       <div>
+                         <h4>Rafael Aquino</h4>
+                               <p>Engenheiro de software</p>
+                               </div>
+                       </div>
+                           </div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            
+            
+<!-- Modal Editar Perfil -->
+<div class="modal fade" id="modalEditarPerfil" tabindex="-1" aria-labelledby="modalEditarPerfilLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form id="formEditarPerfil">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEditarPerfilLabel">Editar Perfil</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Foto de perfil clicável (vai sumir para usuário comum via JS) -->
+          <div id="fotoPerfilContainer" class="mb-3 text-center">
+            <label class="form-label">Foto de Perfil</label>
+            <div id="previewFotoPerfil" style="width:120px; height:120px; margin: 0 auto; border-radius:50%; overflow:hidden; border:1px solid #ccc; cursor:pointer;">
+              <img id="imgPreview" src="default-avatar.png" alt="Foto de Perfil" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+            </div>
+            <input type="file" id="inputFotoPerfil" accept="image/*" style="display:none;" />
+          </div>
+
+          <!-- Campos comuns -->
+          <div class="mb-3">
+            <label for="editUsername" class="form-label">Nome de Usuário</label>
+            <input type="text" class="form-control" id="editUsername" name="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="editEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="editEmail" name="email" required>
+          </div>
+
+          <!-- Campos para profissional -->
+          <div id="profissionalCampos" style="display:none;">
+            <div class="mb-3">
+              <label for="editEspecialidade" class="form-label">Especialidade</label>
+              <input type="text" class="form-control" id="editEspecialidade" name="especialidade">
+            </div>
+            <div class="mb-3">
+              <label for="editLocalizacao" class="form-label">Localização de Atendimento</label>
+              <input type="text" class="form-control" id="editLocalizacao" name="localizacao">
+            </div>
+            <div class="mb-3">
+              <label for="editHorario" class="form-label">Horário de Atendimento</label>
+              <input type="text" class="form-control" id="editHorario" name="horario">
+            </div>
+            <div class="mb-3">
+              <label for="editTelefone" class="form-label">Telefone para Contato</label>
+              <input type="tel" class="form-control" id="editTelefone" name="telefone">
+            </div>
+          </div>
+
+          <!-- Botão excluir conta -->
+          <div class="mb-3 text-center mt-4">
+            <button type="button" id="btnExcluirConta" class="btn btn-danger">Excluir Minha Conta</button>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="../guilherme/js/jquery.min.js"></script>
+        <script src="../guilherme/js/bootstrap.bundle.min.js"></script>
+        <script src="../guilherme/js/jquery.sticky.js"></script>
+        <script src="../guilherme/js/click-scroll.js"></script>
+        <script src="../guilherme/js/animated-headline.js"></script>
+        <script src="../guilherme/js/modernizr.js"></script>
+        <script src="../guilherme/js/custom.js"></script>
+        <script src="../guilherme/js/apidepoimentos.js"></script>
+        <script src="../guilherme/js/profissionais.js"></script>
+        <script src="../guilherme/listarprofissionais.js"></script>
+        <script src="../guilherme/listarlocais.js"></script>
+        
+        <script src="../guilherme/home.js"></script>
+
+
+    </body>
+</html>

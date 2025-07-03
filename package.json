@@ -1,0 +1,12 @@
+{
+  "name": "meu-projeto",
+  "version": "1.0.0",
+  "description": "Projeto que roda JSON Server e serve index.html",
+  "main": "server.js",
+  "scripts": {
+    "start": "json-server --watch ./db.json --port 3000 --static ./codigo/public"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
