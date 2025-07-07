@@ -38,50 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const apiProfissionais = 'https://0aecadb3-e8a7-43c2-ab62-e5bf81c2286c-00-1roml84r0ldxr.riker.replit.dev/profissionais';
   const apiComum = 'https://0aecadb3-e8a7-43c2-ab62-e5bf81c2286c-00-1roml84r0ldxr.riker.replit.dev/comum';
 
-  if (usuarioLogadoStr) {
-    try {
-      const usuario = JSON.parse(usuarioLogadoStr);
-      btnLogin.style.display = "none";
-      btnPerfil.style.display = "inline-block";
-      btnPerfil.textContent = usuario.username || "Perfil";
-
-      btnPerfil.addEventListener("click", function (e) {
-        e.preventDefault();
-        const modal = new bootstrap.Modal(document.getElementById("modalEditarPerfil"));
-        modal.show();
-        preencherFormularioEditarPerfil(usuario);
-      });
-    } catch (e) {
-      console.error("Erro ao processar usuário logado:", e);
-    }
-  } else {
-    btnLogin.style.display = "inline-block";
-    btnPerfil.style.display = "none";
-
-    // Trava para não deixar scroll passar da section_2
-    const secao2 = document.getElementById('section_2');
-
-    window.addEventListener('scroll', () => {
-      if (!secao2) return;
-      const limite = secao2.offsetTop + secao2.offsetHeight;
-      if (window.scrollY + window.innerHeight > limite + 50) {
-        window.scrollTo({ top: limite - window.innerHeight + 100, behavior: 'smooth' });
-        mostrarAviso();
-      }
-    });
-
-    // Bloqueia links do menu para seções bloqueadas para não logados
-    const bloquearSecoes = ['section_3', 'section_4', 'section_5'];
-    document.querySelectorAll('.nav-link').forEach(link => {
-      const destino = link.getAttribute('href');
-      if (destino && bloquearSecoes.includes(destino.replace('#', ''))) {
-        link.addEventListener('click', e => {
-          e.preventDefault();
-          mostrarAviso();
-        });
-      }
-    });
-  }
+  
 
   function preencherFormularioEditarPerfil(usuario) {
     document.getElementById('editUsername').value = usuario.username || '';
